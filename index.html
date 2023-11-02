@@ -4,14 +4,23 @@
   <title>ES Module 예제</title>
 </head>
 <body>
-  <h1 id="plus"></h1>
-  <h1 id="minus"></h1>
+  <h1 id="emsPlus"></h1>
+  <h1 id="emsMinus"></h1>
+  <!-- <h1 id="cmsPlus"></h1>
+  <h1 id="cmsMinus"></h1> -->
   <script type="module">
     // math.js 모듈을 가져와서 사용합니다.
-    import { plus, minus } from '/mod.js';
+    import { emsPlus, emsMinus } from '/emsMod.js';
+    // import { cmsPlus, cmsMinus } from '/cmsMod.js';
+    // let cmsPlus = require('./cmsMod').cmsPlus;
+    // let cmsMinus = require('./cmsMod').cmsMinus;
+
     // 모듈 함수를 호출하고 결과를 출력합니다.
-    document.getElementById('plus').innerHTML = `${plus(2,3)}`
-    document.getElementById('minus').innerHTML = `${minus(2,3)}`
+    document.getElementById('emsPlus').innerHTML = `emsPlus : ${emsPlus(2,3)}`
+    document.getElementById('emsMinus').innerHTML = `emsMinus : ${emsMinus(2,3)}`
+    // document.getElementById('cmsPlus').innerHTML = `cmsPlus : ${cmsPlus(2,3)}`
+    // document.getElementById('cmsMinus').innerHTML = `cmsMinus : ${cmsMinus(2,3)}`
+    
   </script>
 </body>
 </html>
