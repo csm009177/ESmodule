@@ -6,19 +6,15 @@
 <body>
   <h1 id="emsPlus"></h1>
   <h1 id="emsMinus"></h1>
-  <h1 id="cjsPlus"></h1>
-  <h1 id="cjsMinus"></h1>
-  <script type="module" src = "cjsMod.js" srt="emsMod.js">
+  <script type="module">
     // math.js 모듈을 가져와서 사용합니다.
     import { emsPlus, emsMinus } from '/emsMod.js';
-    let {cjsPlus, cjsMinus} = require('/cjsMod')
 
     
     // 모듈 함수를 호출하고 결과를 출력합니다.
     document.getElementById('emsPlus').innerHTML = `emsPlus : ${emsPlus(2,3)}`
     document.getElementById('emsMinus').innerHTML = `emsMinus : ${emsMinus(2,3)}`
     
-    document.getElementById('cjsPlus').innerHTML = `cjsPlus : ${cjsMod.cjsPlus(2,3)}`
     
   </script>
 </body>
