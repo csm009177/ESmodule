@@ -4,5 +4,4 @@ function cmsPlus ( a, b){
 function cmsMinus ( a, b){
   return a - b;
 }
-
 module.exports = {cmsPlus, cmsMinus };
